@@ -4,20 +4,20 @@
 </head>
 <body>
 <form id="kalkulator">
-    <center>
-	<input type="text" id="liczba1">
+<center>
+    <input type="text" id="liczba1">
     <input type="text" id="liczba2">
     <input type="text" id="wynik" placeholder="=" disabled="disabled">
     <br><button type="button" onclick="kalkulator(this.innerHTML)">podatek</button>
     <br><button type="button" onclick="kalkulator(this.innerHTML)">brutto</button>
-	<br><button type="button" onclick="kalkulator(this.innerHTML)">netto</button>
-	</center>
+    <br><button type="button" onclick="kalkulator(this.innerHTML)">netto</button>
+</center>
 </form>
 <script>
-	function kalkulator(cos) 
+function kalkulator(cos) 
 {
-    var liczba1 = document.getElementById('liczba1').value;
-    var liczba2 = document.getElementById('liczba2').value; 
+    	var liczba1 = document.getElementById('liczba1').value;
+    	var liczba2 = document.getElementById('liczba2').value; 
 	var vat = 1.23;
 	var podatek= 1.18;
 	
@@ -27,7 +27,7 @@
         var wynik = parseFloat(liczba1) * parseFloat(liczba2) *vat*podatek;         
         break;  
 		
-		case 'brutto':
+	case 'brutto':
         var wynik = parseFloat(liczba1) * parseFloat(liczba2) * vat;         
         break;
 		
